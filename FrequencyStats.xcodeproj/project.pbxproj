@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FF298C529BCD69900DA665F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298C429BCD69900DA665F /* AppDelegate.swift */; };
+		3FF298C729BCD69900DA665F /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298C629BCD69900DA665F /* VisualEffectView.swift */; };
+		3FF298C929BCD69A00DA665F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF298C829BCD69A00DA665F /* Assets.xcassets */; };
+		3FF298CC29BCD69A00DA665F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF298CB29BCD69A00DA665F /* Preview Assets.xcassets */; };
+		3FF298D629BCD6AC00DA665F /* libIOReport.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF298D529BCD6AC00DA665F /* libIOReport.tbd */; };
+		3FF298DE29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298DD29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift */; };
+		3FF298E029BCD6BB00DA665F /* FrequencyStatsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298DF29BCD6BB00DA665F /* FrequencyStatsHelper.swift */; };
+		3FF298E229BCD6BB00DA665F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298E129BCD6BB00DA665F /* main.swift */; };
+		3FF298E729BCD6BB00DA665F /* FrequencyStatsHelper.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 3FF298DB29BCD6BA00DA665F /* FrequencyStatsHelper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FF298EB29BCD6C200DA665F /* libIOReport.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF298D529BCD6AC00DA665F /* libIOReport.tbd */; };
+		3FF298EC29BCD6D000DA665F /* FrequencyStatsHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298DD29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift */; };
+		3FF298F729BCD9BB00DA665F /* SampleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298F629BCD9BB00DA665F /* SampleManager.swift */; };
+		3FF298F929BCDBC300DA665F /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298F829BCDBC300DA665F /* Cluster.swift */; };
+		3FF298FB29BCDBCC00DA665F /* SystemConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298FA29BCDBCC00DA665F /* SystemConstants.swift */; };
+		3FF298FD29BE9C3700DA665F /* ClusterItemGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298FC29BE9C3700DA665F /* ClusterItemGraph.swift */; };
+		3FF298FF29BFBEA200DA665F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF298FE29BFBEA200DA665F /* AppSettings.swift */; };
+		3FF2990129BFBEB300DA665F /* ClusterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990029BFBEB300DA665F /* ClusterItem.swift */; };
+		3FF2990329BFBEBA00DA665F /* ClusterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990229BFBEBA00DA665F /* ClusterListView.swift */; };
+		3FF2990629BFBFAE00DA665F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990529BFBFAE00DA665F /* Logger.swift */; };
+		3FF2990929BFD5B600DA665F /* ClusterItemCoreMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990829BFD5B600DA665F /* ClusterItemCoreMeter.swift */; };
+		3FF2990B29BFD8DA00DA665F /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990A29BFD8DA00DA665F /* AppSettingsView.swift */; };
+		3FF2991029C0FAD000DA665F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF2990529BFBFAE00DA665F /* Logger.swift */; };
+		3FF2991429C0FBC700DA665F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FF2991629C0FBC700DA665F /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FF298E429BCD6BB00DA665F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FF298B929BCD69900DA665F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FF298DA29BCD6BA00DA665F;
+			remoteInfo = FrequencyStatsHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FF298E629BCD6BB00DA665F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				3FF298E729BCD6BB00DA665F /* FrequencyStatsHelper.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FF298C129BCD69900DA665F /* FrequencyStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrequencyStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF298C429BCD69900DA665F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FF298C629BCD69900DA665F /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		3FF298C829BCD69A00DA665F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FF298CB29BCD69A00DA665F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FF298CD29BCD69A00DA665F /* FrequencyStats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrequencyStats.entitlements; sourceTree = "<group>"; };
+		3FF298D329BCD69F00DA665F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FF298D529BCD6AC00DA665F /* libIOReport.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libIOReport.tbd; path = usr/lib/libIOReport.tbd; sourceTree = SDKROOT; };
+		3FF298DB29BCD6BA00DA665F /* FrequencyStatsHelper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = FrequencyStatsHelper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF298DD29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyStatsHelperProtocol.swift; sourceTree = "<group>"; };
+		3FF298DF29BCD6BB00DA665F /* FrequencyStatsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyStatsHelper.swift; sourceTree = "<group>"; };
+		3FF298E129BCD6BB00DA665F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3FF298E329BCD6BB00DA665F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF298EE29BCD71600DA665F /* FrequencyStats-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrequencyStats-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FF298F129BCD72100DA665F /* IOReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOReport.h; sourceTree = "<group>"; };
+		3FF298F229BCD74200DA665F /* FrequencyStatsHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrequencyStatsHelper-Bridging-Header.h"; sourceTree = "<group>"; };
+		3FF298F529BCD75200DA665F /* IOReport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOReport.h; sourceTree = "<group>"; };
+		3FF298F629BCD9BB00DA665F /* SampleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleManager.swift; sourceTree = "<group>"; };
+		3FF298F829BCDBC300DA665F /* Cluster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		3FF298FA29BCDBCC00DA665F /* SystemConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemConstants.swift; sourceTree = "<group>"; };
+		3FF298FC29BE9C3700DA665F /* ClusterItemGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterItemGraph.swift; sourceTree = "<group>"; };
+		3FF298FE29BFBEA200DA665F /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		3FF2990029BFBEB300DA665F /* ClusterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterItem.swift; sourceTree = "<group>"; };
+		3FF2990229BFBEBA00DA665F /* ClusterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterListView.swift; sourceTree = "<group>"; };
+		3FF2990529BFBFAE00DA665F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3FF2990829BFD5B600DA665F /* ClusterItemCoreMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterItemCoreMeter.swift; sourceTree = "<group>"; };
+		3FF2990A29BFD8DA00DA665F /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		3FF2991529C0FBC700DA665F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2991729C0FDEF00DA665F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2991829C0FDF800DA665F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2991929C0FDFC00DA665F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2991A29C0FE0300DA665F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FF2991B29C0FE0700DA665F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2991C29C0FE1200DA665F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FF2991D29C0FE1600DA665F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FF2991F29C0FE2000DA665F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2992029C0FE2500DA665F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2992129C0FE2E00DA665F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2992229C0FE3100DA665F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FF2992329C0FE3200DA665F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FF298BE29BCD69900DA665F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF298D629BCD6AC00DA665F /* libIOReport.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF298D829BCD6BA00DA665F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF298EB29BCD6C200DA665F /* libIOReport.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FF298B829BCD69900DA665F = {
+			isa = PBXGroup;
+			children = (
+				3FF2991329C0FBB900DA665F /* Localization */,
+				3FF298C329BCD69900DA665F /* FrequencyStats */,
+				3FF298DC29BCD6BB00DA665F /* FrequencyStatsHelper */,
+				3FF298C229BCD69900DA665F /* Products */,
+				3FF298D429BCD6AC00DA665F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FF298C229BCD69900DA665F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298C129BCD69900DA665F /* FrequencyStats.app */,
+				3FF298DB29BCD6BA00DA665F /* FrequencyStatsHelper.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FF298C329BCD69900DA665F /* FrequencyStats */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298D329BCD69F00DA665F /* Info.plist */,
+				3FF298C829BCD69A00DA665F /* Assets.xcassets */,
+				3FF298CD29BCD69A00DA665F /* FrequencyStats.entitlements */,
+				3FF298F129BCD72100DA665F /* IOReport.h */,
+				3FF298EE29BCD71600DA665F /* FrequencyStats-Bridging-Header.h */,
+				3FF298C429BCD69900DA665F /* AppDelegate.swift */,
+				3FF2990529BFBFAE00DA665F /* Logger.swift */,
+				3FF2990F29BFEAD400DA665F /* Logic */,
+				3FF2990C29BFD8E100DA665F /* App Settings */,
+				3FF2990429BFBF4B00DA665F /* Views */,
+				3FF298CA29BCD69A00DA665F /* Preview Content */,
+			);
+			path = FrequencyStats;
+			sourceTree = "<group>";
+		};
+		3FF298CA29BCD69A00DA665F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298CB29BCD69A00DA665F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FF298D429BCD6AC00DA665F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298D529BCD6AC00DA665F /* libIOReport.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FF298DC29BCD6BB00DA665F /* FrequencyStatsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298DD29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift */,
+				3FF298DF29BCD6BB00DA665F /* FrequencyStatsHelper.swift */,
+				3FF298E129BCD6BB00DA665F /* main.swift */,
+				3FF298F529BCD75200DA665F /* IOReport.h */,
+				3FF298F229BCD74200DA665F /* FrequencyStatsHelper-Bridging-Header.h */,
+				3FF298E329BCD6BB00DA665F /* Info.plist */,
+			);
+			path = FrequencyStatsHelper;
+			sourceTree = "<group>";
+		};
+		3FF2990429BFBF4B00DA665F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298C629BCD69900DA665F /* VisualEffectView.swift */,
+				3FF2990229BFBEBA00DA665F /* ClusterListView.swift */,
+				3FF2990029BFBEB300DA665F /* ClusterItem.swift */,
+				3FF298FC29BE9C3700DA665F /* ClusterItemGraph.swift */,
+				3FF2990829BFD5B600DA665F /* ClusterItemCoreMeter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FF2990C29BFD8E100DA665F /* App Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298FE29BFBEA200DA665F /* AppSettings.swift */,
+				3FF2990A29BFD8DA00DA665F /* AppSettingsView.swift */,
+			);
+			path = "App Settings";
+			sourceTree = "<group>";
+		};
+		3FF2990F29BFEAD400DA665F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3FF298F829BCDBC300DA665F /* Cluster.swift */,
+				3FF298F629BCD9BB00DA665F /* SampleManager.swift */,
+				3FF298FA29BCDBCC00DA665F /* SystemConstants.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3FF2991329C0FBB900DA665F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3FF2991629C0FBC700DA665F /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FF298C029BCD69900DA665F /* FrequencyStats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF298D029BCD69A00DA665F /* Build configuration list for PBXNativeTarget "FrequencyStats" */;
+			buildPhases = (
+				3FF298BD29BCD69900DA665F /* Sources */,
+				3FF298BE29BCD69900DA665F /* Frameworks */,
+				3FF298BF29BCD69900DA665F /* Resources */,
+				3FF298E629BCD6BB00DA665F /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF298E529BCD6BB00DA665F /* PBXTargetDependency */,
+			);
+			name = FrequencyStats;
+			productName = FrequencyStats;
+			productReference = 3FF298C129BCD69900DA665F /* FrequencyStats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FF298DA29BCD6BA00DA665F /* FrequencyStatsHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF298E829BCD6BB00DA665F /* Build configuration list for PBXNativeTarget "FrequencyStatsHelper" */;
+			buildPhases = (
+				3FF298D729BCD6BA00DA665F /* Sources */,
+				3FF298D829BCD6BA00DA665F /* Frameworks */,
+				3FF298D929BCD6BA00DA665F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrequencyStatsHelper;
+			productName = FrequencyStatsHelper;
+			productReference = 3FF298DB29BCD6BA00DA665F /* FrequencyStatsHelper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FF298B929BCD69900DA665F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3FF298C029BCD69900DA665F = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					3FF298DA29BCD6BA00DA665F = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 3FF298BC29BCD69900DA665F /* Build configuration list for PBXProject "FrequencyStats" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				de,
+				it,
+				ja,
+				ko,
+				"pt-BR",
+				ru,
+				"zh-Hans",
+				"zh-Hant",
+				vi,
+				nl,
+				es,
+			);
+			mainGroup = 3FF298B829BCD69900DA665F;
+			productRefGroup = 3FF298C229BCD69900DA665F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FF298C029BCD69900DA665F /* FrequencyStats */,
+				3FF298DA29BCD6BA00DA665F /* FrequencyStatsHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FF298BF29BCD69900DA665F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF298CC29BCD69A00DA665F /* Preview Assets.xcassets in Resources */,
+				3FF2991429C0FBC700DA665F /* Localizable.strings in Resources */,
+				3FF298C929BCD69A00DA665F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF298D929BCD6BA00DA665F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FF298BD29BCD69900DA665F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF298C729BCD69900DA665F /* VisualEffectView.swift in Sources */,
+				3FF2990629BFBFAE00DA665F /* Logger.swift in Sources */,
+				3FF298EC29BCD6D000DA665F /* FrequencyStatsHelperProtocol.swift in Sources */,
+				3FF2990B29BFD8DA00DA665F /* AppSettingsView.swift in Sources */,
+				3FF2990129BFBEB300DA665F /* ClusterItem.swift in Sources */,
+				3FF298FD29BE9C3700DA665F /* ClusterItemGraph.swift in Sources */,
+				3FF2990329BFBEBA00DA665F /* ClusterListView.swift in Sources */,
+				3FF298C529BCD69900DA665F /* AppDelegate.swift in Sources */,
+				3FF298F729BCD9BB00DA665F /* SampleManager.swift in Sources */,
+				3FF2990929BFD5B600DA665F /* ClusterItemCoreMeter.swift in Sources */,
+				3FF298FB29BCDBCC00DA665F /* SystemConstants.swift in Sources */,
+				3FF298FF29BFBEA200DA665F /* AppSettings.swift in Sources */,
+				3FF298F929BCDBC300DA665F /* Cluster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF298D729BCD6BA00DA665F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF298E029BCD6BB00DA665F /* FrequencyStatsHelper.swift in Sources */,
+				3FF298DE29BCD6BB00DA665F /* FrequencyStatsHelperProtocol.swift in Sources */,
+				3FF298E229BCD6BB00DA665F /* main.swift in Sources */,
+				3FF2991029C0FAD000DA665F /* Logger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FF298E529BCD6BB00DA665F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FF298DA29BCD6BA00DA665F /* FrequencyStatsHelper */;
+			targetProxy = 3FF298E429BCD6BB00DA665F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FF2991629C0FBC700DA665F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FF2991529C0FBC700DA665F /* en */,
+				3FF2991729C0FDEF00DA665F /* it */,
+				3FF2991829C0FDF800DA665F /* ja */,
+				3FF2991929C0FDFC00DA665F /* ko */,
+				3FF2991A29C0FE0300DA665F /* pt-BR */,
+				3FF2991B29C0FE0700DA665F /* ru */,
+				3FF2991C29C0FE1200DA665F /* zh-Hans */,
+				3FF2991D29C0FE1600DA665F /* zh-Hant */,
+				3FF2991F29C0FE2000DA665F /* vi */,
+				3FF2992029C0FE2500DA665F /* nl */,
+				3FF2992129C0FE2E00DA665F /* es */,
+				3FF2992229C0FE3100DA665F /* fr */,
+				3FF2992329C0FE3200DA665F /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FF298CE29BCD69A00DA665F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FF298CF29BCD69A00DA665F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3FF298D129BCD69A00DA665F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FrequencyStats/FrequencyStats.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"FrequencyStats/Preview Content\"";
+				DEVELOPMENT_TEAM = 9BWZQ52AFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrequencyStats/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Frequency Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitespotatobacks.FrequencyStats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrequencyStats/FrequencyStats-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FF298D229BCD69A00DA665F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FrequencyStats/FrequencyStats.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"FrequencyStats/Preview Content\"";
+				DEVELOPMENT_TEAM = 9BWZQ52AFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrequencyStats/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Frequency Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitespotatobacks.FrequencyStats;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrequencyStats/FrequencyStats-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3FF298E929BCD6BB00DA665F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BWZQ52AFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrequencyStatsHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FrequencyStatsHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitespotatobacks.FrequencyStatsHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrequencyStatsHelper/FrequencyStatsHelper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FF298EA29BCD6BB00DA665F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BWZQ52AFK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrequencyStatsHelper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FrequencyStatsHelper;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitespotatobacks.FrequencyStatsHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrequencyStatsHelper/FrequencyStatsHelper-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FF298BC29BCD69900DA665F /* Build configuration list for PBXProject "FrequencyStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF298CE29BCD69A00DA665F /* Debug */,
+				3FF298CF29BCD69A00DA665F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF298D029BCD69A00DA665F /* Build configuration list for PBXNativeTarget "FrequencyStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF298D129BCD69A00DA665F /* Debug */,
+				3FF298D229BCD69A00DA665F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF298E829BCD6BB00DA665F /* Build configuration list for PBXNativeTarget "FrequencyStatsHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF298E929BCD6BB00DA665F /* Debug */,
+				3FF298EA29BCD6BB00DA665F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FF298B929BCD69900DA665F /* Project object */;
+}

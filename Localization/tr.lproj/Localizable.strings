@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FrequencyStats
+
+  Created by Taevon Turner on 3/14/23.
+  
+*/
+
+// main
+"efficiencyString" = "Efficiency";
+"performanceString" = "Performance";
+"graphicsString" = "Graphics";
+"unknownString" = "Unknown";
+
+"frequencyString" = "Frequency";
+"coreMetricsString" = "Core Metrics";
+
+// app settings
+"appsettings.creditString" = "Made with love by BitesPotatoBacks";
+"appsettings.updateIntervalString" = "Update Interval";
+"appsettings.secondString" = "Second";
+"appsettings.pluralSecondString" = "Seconds";
+"appsettings.quitAppString" = "Quit App";

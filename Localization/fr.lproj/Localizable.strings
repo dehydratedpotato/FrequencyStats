@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FrequencyStats
+
+  Created by BitesPotatoBacks on 3/14/23.
+  
+*/
+
+// main
+"efficiencyString" = "Efficacité";
+"performanceString" = "Performance";
+"graphicsString" = "Graphics";
+"unknownString" = "Inconnu";
+
+"frequencyString" = "Fréquence";
+"coreMetricsString" = "Métriques par cœur";
+
+// app settings
+"appsettings.creditString" = "Fait avec amour par BitesPotatoBacks";
+"appsettings.updateIntervalString" = "Update Interval";
+"appsettings.secondString" = "Secondes";
+"appsettings.pluralSecondString" = "Secondes";
+"appsettings.quitAppString" = "Quitter l'application";

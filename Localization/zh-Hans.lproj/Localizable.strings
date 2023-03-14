@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FrequencyStats
+
+  Created by BitesPotatoBacks on 3/14/23.
+  
+*/
+
+// main
+"efficiencyString" = "效率";
+"performanceString" = "效率";
+"graphicsString" = "图形";
+"unknownString" = "未知";
+
+"frequencyString" = "频率";
+"coreMetricsString" = "每核";
+
+// app settings
+"appsettings.creditString" = "BitesPotatoBacks 用爱制作";
+"appsettings.updateIntervalString" = "更新间隔";
+"appsettings.secondString" = "秒";
+"appsettings.pluralSecondString" = "秒";
+"appsettings.quitAppString" = "退出应用程序";

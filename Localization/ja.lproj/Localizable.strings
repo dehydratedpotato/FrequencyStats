@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FrequencyStats
+
+  Created by BitesPotatoBacks on 3/14/23.
+  
+*/
+
+// main
+"efficiencyString" = "Efficiency";
+"performanceString" = "Performance";
+"graphicsString" = "Graphics";
+"unknownString" = "知らない";
+
+"frequencyString" = "周波数";
+"coreMetricsString" = "コア指標";
+
+// app settings
+"appsettings.creditString" = "BitesPotatoBacks が愛情を込めて作成";
+"appsettings.updateIntervalString" = "更新間隔";
+"appsettings.secondString" = "秒";
+"appsettings.pluralSecondString" = "秒";
+"appsettings.quitAppString" = "アプリを終了";

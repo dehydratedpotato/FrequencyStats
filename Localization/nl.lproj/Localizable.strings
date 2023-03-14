@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FrequencyStats
+
+  Created by BitesPotatoBacks on 3/14/23.
+  
+*/
+
+// main
+"efficiencyString" = "Efficiëntie";
+"performanceString" = "Prestatie";
+"graphicsString" = "Grafische kaart";
+"unknownString" = "Onbekend";
+
+"frequencyString" = "Frequentie";
+"coreMetricsString" = "Kernstatistieken";
+
+// app settings
+"appsettings.creditString" = "Met liefde gemaakt door BitesPotatoBacks";
+"appsettings.updateIntervalString" = "Update tijd";
+"appsettings.secondString" = "Seconde";
+"appsettings.pluralSecondString" = "Seconden";
+"appsettings.quitAppString" = "Sluit de app af";

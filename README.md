@@ -4,7 +4,7 @@
     <h1 align="center" style="">Frequency Stats</h1>
 <!--     <p> -->
     <p align="center">
-    Daemonless CPU and GPU Frequency Stats in your Menu Bar, for Apple Silicon!
+    (Daemonless and kextless) CPU and GPU frequency stats in your menubar, made for Apple Silicon!
     </p>
 </div>
 
@@ -21,9 +21,11 @@
       <a href="https://github.com/BitesPotatoBacks/FrequencyStats/blob/main/LICENSE">
         <img alt="License" src="https://img.shields.io/github/license/BitesPotatoBacks/FrequencyStats.svg"/>
     </a>
+    <!--
     <a href="https://github.com/BitesPotatoBacks/FrequencyStats/stargazers">
         <img alt="Stars" src="https://img.shields.io/github/stars/BitesPotatoBacks/FrequencyStats.svg"/>
     </a>
+-->
 </p>
 
 <p align="center">
@@ -33,20 +35,18 @@
 
 ___
 
-# Deets
-Once upon a time, I created a command line tool, the [SocPowerBuddy](https://github.com/BitesPotatoBacks/SocPowerBuddy), the soul purpose of which was to provide _real_ per-core frequency metrics on Apple Silicon without needing sudo. I thought that it would be cool to make an efficient little menu bar app based on it!
+## Project Deets
+Once upon a time, I created a command line tool, the [SocPowerBuddy](https://github.com/BitesPotatoBacks/SocPowerBuddy); the soul purpose of which was to provide _real_ per-core frequency metrics on Apple Silicon without needing sudo. I thought that it would be cool to make an efficient little menu bar app based on it, which doesn't need a daemon or a kext!
 
 I hope to add Intel support someday, but to follow my personal rule for this project, it needs to be a rootless implementation...
 
-# Installation
+## Installation
 You can download the latest version [here!](https://github.com/BitesPotatoBacks/FrequencyStats/releases)
 
-# Requirements
+## Requirements
 For Now, you'll need an Apple Silicon machine running Big Sur (macOS 11) or newer to use this app. 
 
-___
-
-# WIP Features
+## WIP Features
 - [x] ~~Cluster Frequencies~~
 - [x] ~~Cluster Graphs~~
 - [x] ~~Per-Core Frequencies~~
@@ -72,3 +72,11 @@ If you can call it that, for what little there is lol...
 - Spanish
 - French
 - German
+
+## Contribution
+If you find any bugs or wish to add any features, open an issue or PR and i'll get my eyes on it as soon as possible!
+
+## License
+[MIT License](https://github.com/BitesPotatoBacks/FrequencyStats/blob/main/LICENSE)
+
+

@@ -1,10 +1,10 @@
 <div>
 <!--   <p align="center"> -->
 <!--     <img width=86 height=86 alt="Icon" src="images/frequency-stats-icon.png"> -->
-    <h1 align="center" style="">Frequency Stats</h1>
+    <h2 align="center" style="">Frequency Stats - for Apple Silicon</h2>
 <!--     <p> -->
     <p align="center">
-    (Daemonless and kextless) CPU and GPU frequency stats in your menubar, made for Apple Silicon!
+    <b>Daemonless</b> and <b>kextless</b> CPU and GPU frequency stats in your menubar!
     </p>
 </div>
 
@@ -16,11 +16,13 @@
        <img alt="Software Support" src="https://img.shields.io/badge/platform-macOS-lightgray.svg"/>
     </a>
     <a href="">
-       <img alt="Software Support" src="https://img.shields.io/badge/support-arm64-orange.svg"/>
+       <img alt="Software Support" src="https://img.shields.io/badge/support-M1_Series-orange.svg"/>
     </a>
       <a href="https://github.com/BitesPotatoBacks/FrequencyStats/blob/main/LICENSE">
         <img alt="License" src="https://img.shields.io/github/license/BitesPotatoBacks/FrequencyStats.svg"/>
     </a>
+        <br><br>
+        <a href="https://github.com/BitesPotatoBacks/FrequencyStats/releases">Download from Github Releases</a>
     <!--
     <a href="https://github.com/BitesPotatoBacks/FrequencyStats/stargazers">
         <img alt="Stars" src="https://img.shields.io/github/stars/BitesPotatoBacks/FrequencyStats.svg"/>
@@ -29,27 +31,30 @@
 </p>
 
 <p align="center">
-<img height=360 alt="Example Screenshot" src="images/example-img-dark2.png">
-<img height=360 alt="Example Screenshot" src="images/example-mg-light2.png">
+<img width=800 alt="Example Screenshot" src="images/beautified-example.png">
 </p>
-
-___
 
 ## Project Deets
 Once upon a time, I created a command line tool, the [SocPowerBuddy](https://github.com/BitesPotatoBacks/SocPowerBuddy); the soul purpose of which was to provide _real_ per-core frequency metrics on Apple Silicon without needing sudo. I thought that it would be cool to make an efficient little menu bar app based on it, which doesn't need a daemon or a kext!
 
 I hope to add Intel support someday, but to follow my personal rule for this project, it needs to be a rootless implementation...
 
-## Installation
-You can download the latest version [here!](https://github.com/BitesPotatoBacks/FrequencyStats/releases)
+### Features
+The current feature set covers cluster frequencies and state distribution, per-core frequencies with colorized meters (for CPUs), and colorized per-cluster graphs (that I need to expand on)...
 
-## Requirements
-For Now, you'll need an Apple Silicon machine running Big Sur (macOS 11) or newer to use this app. 
-
-## WIP Features
+### WIP Features
 - [ ] Extended scrollable history for graphs
 - [ ] CSV Dumping
 - [ ] Menubar Widgets
+
+## Installation
+You can download the latest version from the [Github Releases.](https://github.com/BitesPotatoBacks/FrequencyStats/releases)
+
+## System Requirements
+- Apple Silicon
+- MacOS Big Sur (macOS 11) or newer
+
+Full compatibility notes for silicon support can be found [here.](https://github.com/BitesPotatoBacks/SocPowerBuddy#compatibility-notes)
 
 ## Supported Languages
 If you can call it that, for what little there is lol...

@@ -39,6 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let dropdownWindow = NSWindow()
         dropdownWindow.titleVisibility = .hidden
         dropdownWindow.styleMask.remove(.titled)
+        dropdownWindow.styleMask.insert(.resizable)
         dropdownWindow.backgroundColor = .clear
         dropdownWindow.contentView = dropdownView
         dropdownWindow.hasShadow = true

@@ -11,6 +11,8 @@ public struct ClusterItem: View {
     public let cluster: Cluster
     
     @State private var showCores: Bool = false
+    @State private var showDvfm: Bool = false
+    
     private let roundedRectangle = RoundedRectangle(cornerRadius: 12, style: .continuous)
     
     public var body: some View {
@@ -48,6 +50,16 @@ public struct ClusterItem: View {
                         Text("... MHz")
                             .foregroundColor(Color("primary").opacity(0.7))
                     }
+                    
+                    Button(action: {
+                        showDvfm.toggle()
+                    }, label: {
+                        Image(systemName: "tablecells")
+                            .popover(isPresented: $showDvfm, arrowEdge: .trailing, content: {
+                                dvfmListView
+                            })
+                    })
+                    .buttonStyle(.borderless)
                 }
                 .padding(cluster.cores.isEmpty ?  [.leading, .trailing, .bottom] : [.leading, .trailing], 10)
                 
@@ -77,13 +89,59 @@ public struct ClusterItem: View {
         .shadow(color: .black.opacity(0.3), radius: 3, y: 2)
     }
     
+    @State private var showTimeOfResidency: Bool = false
+    
+    @ViewBuilder private var dvfmListView: some View {
+        VStack(spacing: 10) {
+            Text(NSLocalizedString("distributionString", comment: ""))
+                .foregroundColor(Color("primary"))
+                .font(.caption2)
+            
+            Picker("", selection: $showTimeOfResidency, content: {
+                Text(NSLocalizedString("percentString", comment: ""))
+                    .tag(false)
+                Text(NSLocalizedString("timeString", comment: ""))
+                    .tag(true)
+            })
+            .pickerStyle(.segmented)
+            
+            ForEach(cluster.dvfsStates.array, id:\.nominalFrequency) { state in
+                HStack {
+                    Text(String(format: "%u MHz", state.nominalFrequency))
+                        .foregroundColor(Color("primary"))
+                    Spacer()
+                    
+                    ZStack {
+                        if !showTimeOfResidency {
+                            if state.residency == 0 {
+                                Text("0 %")
+                            } else {
+                                Text(String(format: "%.2f %%", state.residency * 100))
+                            }
+                        } else {
+                            Text(String(format: "%llu ms", UInt64(state.residency * (AppSettings.shared.updateInterval * 1000))))
+                        }
+                    }
+                    .foregroundColor(Color("primary").opacity(0.7))
+                }
+            }
+        }
+        .frame(width: 175)
+        .padding(12)
+    }
+    
     @ViewBuilder private var coreListView: some View {
         VStack(spacing: 10) {
+            Text("\(cluster.clusterPrefix)Cores x\(cluster.cores.count)")
+                .foregroundColor(Color("primary"))
+                .font(.caption2)
+            
             let cores = cluster.cores.sorted(by: { $0.coreKey < $1.coreKey })
             
             ForEach(cores.indices, id: \.self) { i in
                 HStack {
                     Text("\(cluster.clusterPrefix)Core #\(i)")
+                        .foregroundColor(Color("primary"))
                     Spacer()
                     Text(String(format: "%.f MHz", cores[i].frequency))
                         .foregroundColor(Color("primary").opacity(0.7))

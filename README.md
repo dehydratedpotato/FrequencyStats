@@ -47,14 +47,7 @@ You can download the latest version [here!](https://github.com/BitesPotatoBacks/
 For Now, you'll need an Apple Silicon machine running Big Sur (macOS 11) or newer to use this app. 
 
 ## WIP Features
-- [x] ~~Cluster Frequencies~~
-- [x] ~~Cluster Graphs~~
-- [x] ~~Per-Core Frequencies~~
-- [x] ~~Per-Core Meters~~
-- [x] ~~Inerval Setting (1-10s)~~
-- [ ] Cluster Graphs extended scrollable history
-- [ ] DVFM/P-State distribution popover
-- [ ] Graph color options
+- [ ] Extended scrollable history for graphs
 - [ ] CSV Dumping
 - [ ] Menubar Widgets
 

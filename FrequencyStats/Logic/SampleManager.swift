@@ -157,6 +157,10 @@ public final class SampleManager: ObservableObject {
                             }
                         }
                         
+                        if frequency.isNaN {
+                            frequency = 0
+                        }
+                        
                         clusters[clusterIndex].frequency.append(frequency)
                         
                         // handle frequency history
@@ -189,6 +193,10 @@ public final class SampleManager: ObservableObject {
                                     
                                     clusters[clusterIndex].cores[coreIndex].frequency += residency * CGFloat(nominalFrequency)
                                 }
+                            }
+                            
+                            if clusters[clusterIndex].cores[coreIndex].frequency.isNaN  {
+                                clusters[clusterIndex].cores[coreIndex].frequency = 0
                             }
                         }
                     }

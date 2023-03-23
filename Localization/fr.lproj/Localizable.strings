@@ -15,9 +15,14 @@
 "frequencyString" = "Fréquence";
 "coreMetricsString" = "Métriques par cœur";
 
+"percentString" = "Pour cent";
+"timeString" = "Temps";
+"distributionString" = "Répartition de l'état";
 // app settings
 "appsettings.creditString" = "Fait avec amour par BitesPotatoBacks";
 "appsettings.updateIntervalString" = "Update Interval";
 "appsettings.secondString" = "Secondes";
 "appsettings.pluralSecondString" = "Secondes";
 "appsettings.quitAppString" = "Quitter l'application";
+"appsettings.githubVisitString" = "Visite sur Github";
+"appsettings.graphColorString" = "Couleur du graphique";

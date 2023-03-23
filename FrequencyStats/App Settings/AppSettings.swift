@@ -8,19 +8,40 @@
 import SwiftUI
 
 public final class AppSettings: NSObject, ObservableObject, NSWindowDelegate {
-    public static let shared = AppSettings()
+    public static let shared: AppSettings = AppSettings()
+    
+    public struct GraphColor: Identifiable {
+        public let id = UUID()
+        
+        public let name: String
+        public let color: Color
+    }
+    
+    public static let graphColorDictionary: [GraphColor] = [
+        .init(name: "Accent Color", color: .accentColor),
+        .init(name: "Red", color: .red),
+        .init(name: "Orange", color: .orange),
+        .init(name: "Yellow", color: .yellow),
+        .init(name: "Green", color: .green),
+        .init(name: "Blue", color: .blue),
+        .init(name: "Purple", color: .purple),
+        .init(name: "Pink", color: .pink),
+        .init(name: "Solid", color: Color("primary"))
+    ]
     
     public var updateInterval: TimeInterval
+    public var graphColor: GraphColor
+    
+//    public var showGraphics: Bool = true
     
     private var appSettingsWindow: NSWindow?
     private var windowIsVisible: Bool = false
-//    @Published public var graphColor: Color = .accentColor
     
     // MARK: - Lifecycle
     
     override init() {
-        let interval = UserDefaults.standard.integer(forKey: "UpdateInterval")
-//        let color = UserDefaults.standard.integer(forKey: "GraphColor")
+        let interval = UserDefaults.standard.float(forKey: "UpdateInterval")
+        let colorString = UserDefaults.standard.string(forKey: "GraphColor")
         
         if interval != 0 {
             self.updateInterval = TimeInterval(interval)
@@ -28,7 +49,13 @@ public final class AppSettings: NSObject, ObservableObject, NSWindowDelegate {
             self.updateInterval = 1
         }
         
-        let appSettingsView = NSHostingView(rootView: AppSettingsView(updateInterval: self.updateInterval))
+        if let colorString = colorString {
+            self.graphColor = AppSettings.graphColorDictionary.first(where: { $0.name == colorString }) ??  AppSettings.graphColorDictionary[0]
+        } else {
+            self.graphColor = AppSettings.graphColorDictionary[0]
+        }
+        
+        let appSettingsView = NSHostingView(rootView: AppSettingsView(updateInterval: self.updateInterval, graphColor: colorString ?? "Accent Color"))
         let appSettingsWindow = NSWindow()
         
         appSettingsWindow.titlebarAppearsTransparent = true
@@ -52,6 +79,22 @@ public final class AppSettings: NSObject, ObservableObject, NSWindowDelegate {
         self.updateInterval = interval
         
         UserDefaults.standard.set(interval, forKey: "UpdateInterval")
+        
+        SampleManager.shared.startSampleTimer()
+    }
+    
+    public final func setGraphColor(to colorString: String) {
+        SampleManager.shared.stopSampleTimer()
+        
+        if let color = AppSettings.graphColorDictionary.first(where: { $0.name == colorString }) {
+            self.graphColor = color
+            
+            UserDefaults.standard.set(colorString, forKey: "GraphColor")
+        } else {
+            self.graphColor = AppSettings.graphColorDictionary[0]
+            
+            UserDefaults.standard.set("Accent Color", forKey: "GraphColor")
+        }
         
         SampleManager.shared.startSampleTimer()
     }

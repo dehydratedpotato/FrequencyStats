@@ -15,9 +15,14 @@
 "frequencyString" = "Frequentie";
 "coreMetricsString" = "Kernstatistieken";
 
+"percentString" = "Procent";
+"timeString" = "Tijd";
+"distributionString" = "Staatsdistributie";
 // app settings
 "appsettings.creditString" = "Met liefde gemaakt door BitesPotatoBacks";
 "appsettings.updateIntervalString" = "Update tijd";
 "appsettings.secondString" = "Seconde";
 "appsettings.pluralSecondString" = "Seconden";
 "appsettings.quitAppString" = "Sluit de app af";
+"appsettings.githubVisitString" = "Bezoek op Github";
+"appsettings.graphColorString" = "Grafiek kleur";

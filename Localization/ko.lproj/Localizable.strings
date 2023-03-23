@@ -15,9 +15,14 @@
 "frequencyString" = "빈도";
 "coreMetricsString" = "코어당 지표";
 
+"percentString" = "퍼센트";
+"timeString" = "밀리초";
+"distributionString" = "상태 분포";
 // app settings
 "appsettings.creditString" = "BitesPotatoBacks의 사랑으로 제작";
 "appsettings.updateIntervalString" = "업데이트 간격";
 "appsettings.secondString" = "두번째";
 "appsettings.pluralSecondString" = "두번째";
 "appsettings.quitAppString" = "앱 종료";
+"appsettings.githubVisitString" = "Github 방문";
+"appsettings.graphColorString" = "그래프 색상";

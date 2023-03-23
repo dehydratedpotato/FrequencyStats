@@ -22,7 +22,7 @@ public struct ClusterItemGraph: View {
                 .foregroundColor(Color("primary").opacity(0.05))
                 .padding(8)
 
-            LinearGradient(colors: [.accentColor, .accentColor], startPoint: .top, endPoint: .bottom)
+            AppSettings.shared.graphColor.color
                 .frame(height: height)
                 .mask(graphView)
                 .padding(12)

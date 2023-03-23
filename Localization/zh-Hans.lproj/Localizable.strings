@@ -15,9 +15,14 @@
 "frequencyString" = "频率";
 "coreMetricsString" = "每核";
 
+"percentString" = "百分";
+"timeString" = "时间";
+"distributionString" = "状态分布";
 // app settings
 "appsettings.creditString" = "BitesPotatoBacks 用爱制作";
 "appsettings.updateIntervalString" = "更新间隔";
 "appsettings.secondString" = "秒";
 "appsettings.pluralSecondString" = "秒";
 "appsettings.quitAppString" = "退出应用程序";
+"appsettings.githubVisitString" = "在 Github 上访问";
+"appsettings.graphColorString" = "图形颜色";

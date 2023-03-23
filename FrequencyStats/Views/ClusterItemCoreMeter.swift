@@ -22,7 +22,7 @@ public struct ClusterItemCoreMeter: View {
             if let maxFrequency = maxFrequency {
                 capsule
                     .frame(width: frequency / CGFloat(maxFrequency) * width)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(AppSettings.shared.graphColor.color)
             }
         }
         .frame(width: width, height: 4)

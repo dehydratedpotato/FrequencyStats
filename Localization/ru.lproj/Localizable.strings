@@ -15,9 +15,14 @@
 "frequencyString" = "Частота";
 "coreMetricsString" = "Статистика по ядрам";
 
+"percentString" = "Процент";
+"timeString" = "Время";
+"distributionString" = "распределение";
 // app settings
 "appsettings.creditString" = "Сделано с любовью BitesPotatoBacks";
 "appsettings.updateIntervalString" = "Интервал обновления";
 "appsettings.secondString" = "Второй";
 "appsettings.pluralSecondString" = "Секунды";
 "appsettings.quitAppString" = "Выйти из приложения";
+"appsettings.githubVisitString" = "Посетите Github";
+"appsettings.graphColorString" = "Цвет графика";

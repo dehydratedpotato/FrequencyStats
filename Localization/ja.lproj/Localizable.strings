@@ -15,9 +15,14 @@
 "frequencyString" = "周波数";
 "coreMetricsString" = "コア指標";
 
+"percentString" = "パーセント";
+"timeString" = "時間";
+"distributionString" = "状態分布";
 // app settings
 "appsettings.creditString" = "BitesPotatoBacks が愛情を込めて作成";
 "appsettings.updateIntervalString" = "更新間隔";
 "appsettings.secondString" = "秒";
 "appsettings.pluralSecondString" = "秒";
 "appsettings.quitAppString" = "アプリを終了";
+"appsettings.githubVisitString" = "Github にアクセス";
+"appsettings.graphColorString" = "グラフの色";

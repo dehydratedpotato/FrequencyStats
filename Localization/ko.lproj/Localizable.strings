@@ -7,13 +7,13 @@
 */
 
 // main
-"efficiencyString" = "능률";
-"performanceString" = "성능";
-"graphicsString" = "제도법";
-"unknownString" = "알려지지 않은";
+"efficiencyString" = "효율 코어";
+"performanceString" = "성능 코어";
+"graphicsString" = "GPU";
+"unknownString" = "정의되지 않은 내용";
 
-"frequencyString" = "빈도";
-"coreMetricsString" = "코어당 지표";
+"frequencyString" = "클럭";
+"coreMetricsString" = "코어 별 클럭";
 
 "percentString" = "퍼센트";
 "timeString" = "밀리초";
@@ -21,8 +21,8 @@
 // app settings
 "appsettings.creditString" = "BitesPotatoBacks의 사랑으로 제작";
 "appsettings.updateIntervalString" = "업데이트 간격";
-"appsettings.secondString" = "두번째";
-"appsettings.pluralSecondString" = "두번째";
+"appsettings.secondString" = "초";
+"appsettings.pluralSecondString" = "초";
 "appsettings.quitAppString" = "앱 종료";
 "appsettings.githubVisitString" = "Github 방문";
 "appsettings.graphColorString" = "그래프 색상";

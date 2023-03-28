@@ -92,7 +92,7 @@ public struct SystemConstants {
         var clusterKeys: [String] = []
         
         if self.systemModel.contains("pro") || self.systemModel.contains("max") {
-            clusterKeys = ["ECPU","PCPU0","PCPU1","GPUPH"]
+            clusterKeys = ["ECPU","PCPU","PCPU1","GPUPH"]
             
             coreKeys = ["ECPU0","PCPU0","PCPU1"]
         } else if self.systemModel.contains("ultra") {

@@ -50,8 +50,9 @@ public final class SampleManager: ObservableObject {
             
             // if the cluster is not a GPU, for every core in the corresponding index of our core counts, make a new core
             if key != "GPUPH" {
+                let coreKey: String = systemConstants.coreKeys[i] // This is solution of the E-core frequency problem
                 for coreIndex in 0..<systemConstants.clusterCoreCounts[i] {
-                    let core = Core(coreKey: "\(key)\(coreIndex)", dvfsStates: (dvfsStates, 0), frequency: 0)
+                    let core = Core(coreKey: "\(coreKey)\(coreIndex)", dvfsStates: (dvfsStates, 0), frequency: 0)
                     cores.append(core)
                 }
             }

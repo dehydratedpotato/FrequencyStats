@@ -16,7 +16,7 @@
        <img alt="Software Support" src="https://img.shields.io/badge/platform-macOS-lightgray.svg"/>
     </a>
     <a href="">
-       <img alt="Software Support" src="https://img.shields.io/badge/support-M1_Series-orange.svg"/>
+       <img alt="Software Support" src="https://img.shields.io/badge/support-Apple_Silicon-orange.svg"/>
     </a>
       <a href="https://github.com/BitesPotatoBacks/FrequencyStats/blob/main/LICENSE">
         <img alt="License" src="https://img.shields.io/github/license/BitesPotatoBacks/FrequencyStats.svg"/>
